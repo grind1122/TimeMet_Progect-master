@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryTM">#283135</color>
+    <color name="colorPrimaryTMDark">#1c2225</color>
+    <color name="colorAccentTM">#e57737</color>
+    <color name="backgroundTM">#e3fff4</color>
+    <color name="fab_color">#46dc41</color>
+    <color name="red">#f80a0a</color>
+    <color name="color_ripple_fab">#18e04e</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_button">#f2ae47</color>
+    <color name="color_bad_check">#ff4643</color>
+    <color name="color_good_check">#21bf40</color>
+    <color name="backgroundPrimaryTM">#b3283135</color>
+    <color name="hyperLink">#ffae00</color>
+    <color name="unselect_for_intro_progress">#9f5225</color>
+</resources>

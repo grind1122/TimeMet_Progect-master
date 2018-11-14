@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/IntroAppStyle"
+    android:background="@color/colorPrimaryTM">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/days_one"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Добро пожаловать!" />
+
+        <ImageView
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/only_logo_tm"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/days_one"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+
+            android:layout_gravity="center_horizontal"
+            android:text="Тайммет Вторчермет"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/roboto"
+            android:text="Добро пожаловать в приложение компании ООО ”Тайммет”. Ознакомьтесь с основными возможностями приложения. "
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="50dp"/>
+    </LinearLayout>
+
+</FrameLayout>

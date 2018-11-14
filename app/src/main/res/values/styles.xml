@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryTM</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryTMDark</item>
+        <item name="colorAccent">@color/colorAccentTM</item>
+        <item name="android:colorBackground">@color/backgroundTM</item>
+
+    </style>
+    <style name="ButtonStyle" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:colorAccent">@color/color_button</item>
+        <item name="android:colorControlHighlight">@color/colorAccentTM</item>
+        <item name="background">@drawable/button_corners</item>
+    </style>
+
+    <style name="IntroAppStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryTM</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryTMDark</item>
+        <item name="colorAccent">@color/colorAccentTM</item>
+        <item name="android:colorBackground">@color/colorAccentTM</item>
+    </style>
+    <style name="AppTheme.MainActivityStyle">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+</resources>

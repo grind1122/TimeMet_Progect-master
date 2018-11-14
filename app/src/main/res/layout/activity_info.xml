@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_v2"
+    tools:context=".InfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryTM">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="43dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical"
+
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_info_outline_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/days_one"
+                        android:paddingStart="8dp"
+                        android:text="@string/about_us"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_info">
+
+            <FrameLayout
+                android:id="@+id/frameInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@color/backgroundPrimaryTM"
+                        android:fontFamily="@font/days_one"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:text="О компании:"
+                        android:textColor="@android:color/white"
+                        android:textSize="23sp" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginStart="25dp"
+                        android:background="@color/backgroundPrimaryTM"
+                        android:fontFamily="@font/days_one"
+                        android:gravity="start"
+                        android:paddingBottom="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:text="ООО Таймет - компания, которая специализируется на приеме металлалома с последующей его отправкой на переработку. Мы давно работаем на рынке вторсырья и удерживаем хорошую репутацию, проводя выгодные сделки на максимально прозрачных условиях. "
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@color/backgroundPrimaryTM"
+                        android:fontFamily="@font/days_one"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:text="Контакты:"
+                        android:textColor="@android:color/white"
+                        android:textSize="23sp" />
+
+                    <LinearLayout
+                        android:id="@+id/callLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginStart="25dp"
+                        android:background="@color/backgroundPrimaryTM"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp">
+
+                        <ImageView
+                            android:layout_width="23dp"
+                            android:layout_height="match_parent"
+                            android:foregroundGravity="center_vertical"
+                            android:src="@drawable/ic_phone_in_talk_black_56dp" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/days_one"
+                            android:gravity="start|center_vertical"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp"
+                            android:text="@string/_7_812_389_23_92"
+                            android:textColor="@color/hyperLink"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/webLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginStart="25dp"
+                        android:background="@color/backgroundPrimaryTM"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp">
+
+                        <ImageView
+                            android:layout_width="23dp"
+                            android:layout_height="match_parent"
+                            android:foregroundGravity="center_vertical"
+                            android:src="@drawable/ic_earth_white_24dp" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/days_one"
+                            android:gravity="start|center_vertical"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp"
+                            android:text="@string/http_timemet_ru"
+                            android:textColor="@color/hyperLink"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mailLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginStart="25dp"
+                        android:background="@color/backgroundPrimaryTM"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp">
+
+                        <ImageView
+                            android:layout_width="23dp"
+                            android:layout_height="match_parent"
+                            android:foregroundGravity="center_vertical"
+                            android:src="@drawable/ic_email_white_24dp" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/days_one"
+                            android:gravity="start|center_vertical"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp"
+                            android:text="@string/timemet_mail"
+                            android:textColor="@color/hyperLink"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/geoLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginStart="25dp"
+                        android:background="@color/backgroundPrimaryTM"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp">
+
+                        <ImageView
+                            android:layout_width="23dp"
+                            android:layout_height="match_parent"
+                            android:foregroundGravity="center_vertical"
+                            android:src="@drawable/ic_place_white_24dp" />
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/days_one"
+                            android:gravity="start|center_vertical"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp"
+                            android:text="@string/timemet_adress"
+                            android:textColor="@color/hyperLink"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@color/backgroundPrimaryTM"
+                        android:fontFamily="@font/days_one"
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:text="Наши партнеры:"
+                        android:textColor="@android:color/white"
+                        android:textSize="23sp" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/backgroundPrimaryTM"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginBottom="25dp">
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/viewPagerLogo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:background="@android:color/white">
+                        </android.support.v4.view.ViewPager>
+                        <ImageView
+                            android:id="@+id/arrowRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_chevron_right_black_24dp"
+                            android:layout_gravity="center_vertical|end"
+                            android:visibility="visible"/>
+                        <ImageView
+                            android:id="@+id/arrowLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_chevron_left_black_24dp"
+                            android:layout_gravity="center_vertical|start"
+                            android:visibility="invisible"/>
+                    </FrameLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginBottom="8dp">
+
+                        <ImageView
+                            android:id="@+id/vk_logo"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/vk_logo" />
+                        <ImageView
+                            android:id="@+id/ok_logo"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ok_logo" />
+                        <ImageView
+                            android:id="@+id/fb_logo"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/fb_logo" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabCall"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:tint="@android:color/transparent"
+            app:backgroundTint="@color/fab_color"
+            android:elevation="6dp"
+            android:translationZ="4dp"
+            app:fabSize="normal"
+            app:rippleColor="@color/colorAccentTM"
+            app:srcCompat="@drawable/ic_phone_in_talk_black_56dp" />
+
+</FrameLayout>

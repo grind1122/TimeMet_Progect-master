@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:minWidth="300dp"
+    android:maxWidth="350dp"
+    android:orientation="vertical">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        android:scrollbars="vertical">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лом черных металлов 3А"
+            android:fontFamily="@font/days_one"
+            android:layout_marginBottom="4dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лом черных металлов 3АЖД"
+            android:fontFamily="@font/days_one"
+            android:layout_marginBottom="4dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лом черных металлов 3А2"
+            android:fontFamily="@font/days_one"
+            android:layout_marginBottom="4dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лом черных металлов 5А"
+            android:fontFamily="@font/days_one"
+            android:layout_marginBottom="4dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лом 5АМ"
+            android:fontFamily="@font/days_one"
+            android:layout_marginBottom="4dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лом черных металлов 12А"
+            android:fontFamily="@font/days_one"
+            android:layout_marginBottom="4dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Автомобильный лом 12А1"
+            android:fontFamily="@font/days_one"
+            android:layout_marginBottom="4dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лом черных металлов 16А"
+            android:fontFamily="@font/days_one"
+            android:layout_marginBottom="4dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лом черных металлов 17А"
+            android:fontFamily="@font/days_one"
+            android:layout_marginBottom="4dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лом черных металлов 19А"
+            android:fontFamily="@font/days_one"
+            android:layout_marginBottom="4dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лом черных металлов 20А"
+            android:fontFamily="@font/days_one"/>
+
+    </RadioGroup>
+    </android.support.v4.widget.NestedScrollView>
+    <Button
+        android:id="@+id/buttonCategoryOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:text="OK"
+        style="@style/ButtonStyle"
+        android:fontFamily="@font/days_one"/>
+</LinearLayout>

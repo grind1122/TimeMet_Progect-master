@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_v2"
+    tools:context=".CalculatorFragment">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:padding="8dp">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <EditText
+            android:id="@+id/editTextCount"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:ems="5"
+            android:maxLength="4"
+            android:hint="Кол-во металла (т)"
+            android:inputType="numberDecimal"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/spinnerRegions"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMetallCategory" />
+
+        <Spinner
+            android:id="@+id/spinnerRegions"
+            android:layout_width="183dp"
+            android:layout_height="21dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginStart="8dp"
+            android:entries="@array/regions"
+            app:layout_constraintBottom_toTopOf="@+id/checkBoxSubmerge"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxSubmerge"
+            android:layout_width="124dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="8dp"
+            android:text="Нужна погрузка"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewForSubmerge"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonResult"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/days_one"
+        android:text="Расчитать"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.223"
+        app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Для расчета прибыли от продажи заполните форму ниже:"
+            android:textColor="@color/colorPrimaryTM"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewForMetall"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_marginBottom="28dp"
+            android:gravity="end"
+            android:textColor="@color/color_good_check"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/textViewForCount"
+            app:layout_constraintEnd_toEndOf="@+id/textViewForCount"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/buttonChooseCategory" />
+
+        <TextView
+            android:id="@+id/textViewForCount"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="36dp"
+            android:layout_marginStart="8dp"
+            android:gravity="end"
+            android:textColor="@color/color_good_check"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/textViewForRegion"
+            app:layout_constraintEnd_toEndOf="@+id/textViewForRegion"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/editTextCount" />
+
+        <TextView
+            android:id="@+id/textViewForRegion"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="64dp"
+            android:layout_marginStart="8dp"
+            android:gravity="end"
+            android:textColor="@color/color_bad_check"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/textViewForSubmerge"
+            app:layout_constraintEnd_toEndOf="@+id/textViewForSubmerge"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/spinnerRegions" />
+
+        <TextView
+            android:id="@+id/textViewForSubmerge"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="43dp"
+            android:layout_marginStart="8dp"
+            android:gravity="end"
+            android:textColor="@color/color_bad_check"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/textViewResult"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxSubmerge" />
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_marginBottom="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorPrimaryTM"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonResult"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/days_one"
+        android:text="Сброс"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/buttonResult" />
+
+        <TextView
+            android:id="@+id/textViewMetallCategory"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="19dp"
+            android:text="Вид металла"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/buttonChooseCategory"
+            style="@style/ButtonStyle"
+            android:layout_width="107dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/days_one"
+            android:text="Выбрать"
+            app:layout_constraintStart_toEndOf="@+id/textViewMetallCategory"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>
