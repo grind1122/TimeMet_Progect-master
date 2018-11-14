@@ -145,8 +145,6 @@ public class SellMetallActivity extends AppCompatActivity {
         textViewConventions.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SellMetallActivity.this, NotificationService.class);
-                startService(intent);
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.contaierSellMetall, new ConventionsFragment())
                         .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
