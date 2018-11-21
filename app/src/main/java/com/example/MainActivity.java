@@ -42,6 +42,11 @@ public class MainActivity extends AppCompatActivity {
         UpdateTask updateTask = new UpdateTask();
         updateTask.execute();
 
+        if(getIntent().hasExtra("price_changed") && getIntent().getStringExtra("price_changed").equals("yes")){
+            Intent intent = new Intent(this, PricelistActivity.class);
+            startActivity(intent);
+        }
+
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
